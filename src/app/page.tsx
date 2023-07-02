@@ -1,31 +1,15 @@
 'use client'
 import React, { useCallback, useState } from 'react';
+import Avocado from './memo/page'
+import Link from 'next/link';
 
-const Avocado = () => {
-  const [count, setCount] = useState(0);
-
-  // const addAvocado = () => {
-  //   setCount(count + 1);
-  // };
-
-  const memoizedAddvocado = useCallback(() => {
-    setCount((c) => c + 1);
-  }, [setCount]);
-
+const Home = () => {
   return (
     <React.Fragment>
-      <Addvocado add={memoizedAddvocado} />
-      <div>{Array(count).fill('🥑').join(',')}</div>
+      <Link href={'/memo'}>Memoization using useCallback and useMemo </Link>
     </React.Fragment>
   );
 };
 
-const Addvocado = React.memo(({ add }: { add: () => void }) => {
-  console.log('component re-rendered');
 
-  return <button onClick={add}>Add avocado</button>;
-});
-
-Addvocado.displayName = 'Addvocado';
-
-export default Avocado
+export default Home
