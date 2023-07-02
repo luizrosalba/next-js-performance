@@ -17,7 +17,7 @@ const Parent = () => {
     );
 };
 
-export const ContextChanges = () => {
+const ContextChanges = (): JSX.Element => {
 
     console.log('rerenders')
     const level = useContext(ExampleContext);
