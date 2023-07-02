@@ -17,7 +17,7 @@ const Parent = () => {
     );
 };
 
-export const ParentChanges = () => {
+export const ContextChanges = () => {
 
     console.log('rerenders')
     const level = useContext(ExampleContext);
@@ -37,4 +37,4 @@ export const ParentChanges = () => {
 
 
 
-export default ParentChanges
+export default ContextChanges
