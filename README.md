@@ -1,3 +1,12 @@
+## Examples on Optimization
+
+Deployed Site:
+https://next-js-performance.vercel.app/
+
+React Tips and NextJS Tips
+
+########### Next DOC
+
 This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
 
 ## Getting Started
