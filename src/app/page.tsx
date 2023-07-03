@@ -6,6 +6,11 @@ import Link from 'next/link';
 const Home = () => {
   return (
     <React.Fragment>
+      <h2>Introduction:</h2>
+      Its important to know how JS compares primitives and objects
+      <Link href={'https://dev-links-seven.vercel.app/docs/JS/Comparison'} target="_blank">comparison</Link>
+
+
       <h2>Optimization:</h2>
       <h3>The 4 reasons to explain why react components Rerenders:</h3>
 
