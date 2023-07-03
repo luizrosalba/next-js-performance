@@ -14,7 +14,13 @@ const StateChanges = () => {
             <p>Click on the button and look at console.log</p>
             <div>Rerender {count}</div>
             <button onClick={() => setCount(count + 1)}>Click to Add</button>
-            <MdCode />
+            <div className='code'>
+                <MdCode />
+            </div>
+            <pre>
+                <code>Your code here</code>
+            </pre>
+
         </React.Fragment>
     );
 };
