@@ -1,6 +1,6 @@
 'use client'
 import React, { useCallback, useState } from 'react';
-
+import MdCode from './mdCode.mdx'
 const Child = () => {
     console.log('Child rerender')
     return (
@@ -37,6 +37,9 @@ const ParentChanges = () => {
             <p>Click on the button and look at console.log</p>
 
             <Parent />
+            <div className='code'>
+                <MdCode />
+            </div>
 
         </React.Fragment>
     );

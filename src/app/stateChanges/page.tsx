@@ -17,9 +17,6 @@ const StateChanges = () => {
             <div className='code'>
                 <MdCode />
             </div>
-            <pre>
-                <code>Your code here</code>
-            </pre>
 
         </React.Fragment>
     );
