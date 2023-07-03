@@ -20,7 +20,7 @@ const Parent = () => {
     );
 };
 
-export const ParentChanges = () => {
+export const HooksChanges = () => {
 
     console.log('rerenders')
     return (
@@ -47,4 +47,4 @@ export const ParentChanges = () => {
 
 
 
-export default ParentChanges
+export default HooksChanges

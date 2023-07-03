@@ -1,6 +1,6 @@
 import Link from "next/link";
 
-export const ParentChanges = () => {
+export const Issue1 = () => {
 
     return (
         <>
@@ -27,4 +27,4 @@ export const ParentChanges = () => {
 
 
 
-export default ParentChanges
+export default Issue1
