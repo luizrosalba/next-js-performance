@@ -22,7 +22,7 @@ const Parent = () => {
     );
 };
 
-export const ParentChanges = () => {
+const ParentChanges = () => {
 
     console.log('rerenders')
 
