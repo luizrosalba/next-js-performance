@@ -1,5 +1,6 @@
 'use client'
 import React, { useCallback, useState } from 'react';
+import MdCode from './mdCode.mdx'
 
 const StateChanges = () => {
     const [count, setCount] = useState(0);
@@ -13,6 +14,7 @@ const StateChanges = () => {
             <p>Click on the button and look at console.log</p>
             <div>Rerender {count}</div>
             <button onClick={() => setCount(count + 1)}>Click to Add</button>
+            <MdCode />
         </React.Fragment>
     );
 };

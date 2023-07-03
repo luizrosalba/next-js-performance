@@ -2,7 +2,21 @@
 const nextConfig = {
   experimental: {
     appDir: true,
+    mdxRs: true,
   },
 }
 
-module.exports = nextConfig
+const withMDX = require("@next/mdx")({
+  extension: /\.mdx?$/,
+  options: {
+    remarkPlugins: [require("remark-prism")],
+  },
+});
+
+
+
+module.exports = withMDX({
+  pageExtensions: ["js", "jsx", "mdx"],
+});
+
+module.exports = withMDX(nextConfig)

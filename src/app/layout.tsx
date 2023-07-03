@@ -12,6 +12,10 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
+      <link
+        rel="stylesheet"
+        href="https://unpkg.com/dracula-prism/dist/css/dracula-prism.css"
+      ></link>
       <body>{children}</body>
     </html>
   )
