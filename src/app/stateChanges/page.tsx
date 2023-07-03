@@ -1,7 +1,7 @@
 'use client'
 import React, { useCallback, useState } from 'react';
 
-export const StateChanges = () => {
+const StateChanges = () => {
     const [count, setCount] = useState(0);
     console.log('rerenders')
     return (

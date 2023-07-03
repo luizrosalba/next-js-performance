@@ -20,7 +20,7 @@ const Parent = () => {
     );
 };
 
-export const HooksChanges = () => {
+const HooksChanges = () => {
 
     console.log('rerenders')
     return (

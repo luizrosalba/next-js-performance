@@ -1,6 +1,6 @@
 import Link from "next/link";
 
-export const Issue1 = () => {
+const Issue1 = () => {
 
     return (
         <>
