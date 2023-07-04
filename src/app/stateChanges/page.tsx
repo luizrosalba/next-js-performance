@@ -1,6 +1,6 @@
 'use client'
+import Link from 'next/link';
 import React, { useCallback, useState } from 'react';
-import MdCode from './mdCode.mdx'
 
 const StateChanges = () => {
     const [count, setCount] = useState(0);
@@ -14,9 +14,11 @@ const StateChanges = () => {
             <p>Click on the button and look at console.log</p>
             <div>Rerender {count}</div>
             <button onClick={() => setCount(count + 1)}>Click to Add</button>
-            <div className='code'>
-                <MdCode />
+            <div>
+
+                <Link href='https://dev-links-seven.vercel.app/docs/ReactJS/Rerender#1-state-changes'>Link to Code</Link>
             </div>
+
 
         </React.Fragment>
     );

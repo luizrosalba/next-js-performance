@@ -1,6 +1,6 @@
 'use client'
 import React, { useCallback, useState } from 'react';
-import MdCode from './mdCode.mdx'
+import Link from 'next/link';
 const Child = () => {
     console.log('Child rerender')
     return (
@@ -35,12 +35,11 @@ const ParentChanges = () => {
                 It always goes “down” the tree: the re-render of a child doesn’t trigger the re-render of a parent. (There are a few caveats and edge cases here, see the full guide for more details: The mystery of React Element, children, parents and re-renders).
             </p>
             <p>Click on the button and look at console.log</p>
+            <div>
+                <Link href='https://dev-links-seven.vercel.app/docs/ReactJS/Rerender#2-parent-or-children-re-renders'>Link to Code</Link>
 
-            <Parent />
-            <div className='code'>
-                <MdCode />
             </div>
-
+            <Parent />
         </React.Fragment>
     );
 };
