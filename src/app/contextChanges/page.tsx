@@ -1,4 +1,5 @@
 'use client'
+import Link from 'next/link';
 import React, { createContext, useCallback, useContext, useState } from 'react';
 
 const ExampleContext = createContext(0);
@@ -30,7 +31,10 @@ const ContextChanges = (): JSX.Element => {
             <ExampleContext.Provider value={level + 1}>
                 <Parent />
             </ExampleContext.Provider>
+            <div>
+                <Link href='https://next-js-performance.vercel.app/contextChanges'>Link to Code</Link>
 
+            </div>
         </React.Fragment>
     );
 };

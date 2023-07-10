@@ -1,4 +1,5 @@
 'use client'
+import Link from 'next/link';
 import React, { createContext, useCallback, useContext, useState } from 'react';
 
 const useCount = () => {
@@ -40,7 +41,10 @@ const HooksChanges = () => {
             </p>
             <p>Click on the button and look at console.log</p>
             <Parent />
+            <div>
+                <Link href='https://next-js-performance.vercel.app/hooksChanges'>Link to Code</Link>
 
+            </div>
         </>
     );
 };
