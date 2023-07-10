@@ -10,11 +10,11 @@ const useCount = () => {
 const Parent = () => {
     const { count, setCount } = useCount() /// when value changes
 
-    console.log('Parent rerender')
+    console.log('Hook rerender')
     return (
         <>
             {/* will rerender when Parent rerenders */}
-            <div>Parent</div>
+            <div>Hook rerender</div>
             <button onClick={() => setCount(count + 1)}>Click to Add</button>
         </>
 
