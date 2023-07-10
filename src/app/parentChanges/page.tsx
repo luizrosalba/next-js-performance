@@ -3,8 +3,11 @@ import React, { useCallback, useState } from 'react';
 import Link from 'next/link';
 const Child = () => {
     console.log('Child rerender')
+    {/* will rerender when Parent rerenders */ }
     return (
-        <div>{'====>'}Child</div>
+        <>
+            <div>{'====>'}Child</div>
+        </>
     )
 }
 
@@ -13,8 +16,8 @@ const Parent = () => {
     console.log('Parent rerender')
     return (
         <>
-            {/* will rerender when Parent rerenders */}
             <div>Parent</div>
+            <div>Look at console </div>
             <Child />
             <button onClick={() => setCount(count + 1)}>Click to Add</button>
         </>
