@@ -16,6 +16,9 @@ export default function RootLayout({
         rel="stylesheet"
         href="https://unpkg.com/dracula-prism/dist/css/dracula-prism.css"
       ></link>
+      <head>
+        <title>React Performance</title>
+      </head>
       <body>{children}</body>
     </html>
   )
